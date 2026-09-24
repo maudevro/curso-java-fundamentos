@@ -22,9 +22,8 @@ public class ManejoStrings {
         // Demostración de inmutabilidad:
         // Intentar transformar el texto no cambia la variable original.
         saludo.toUpperCase();
-        System.out.println("¿Cambió el original tras toUpperCase()?: " + saludo);
-        // Explicación:
         // Sigue en minúsculas porque toUpperCase() genera un NUEVO String en memoria.
+        System.out.println("¿Cambió el original tras toUpperCase()?: " + saludo);
 
         // Para guardar el cambio, debes reasignar la variable o capturarla en una nueva:
         String saludoMayuscula = saludo.toUpperCase();
@@ -45,8 +44,8 @@ public class ManejoStrings {
         System.out.println("El primer carácter (posición 0) es: " + primerCaracter);
 
         // .substring(desde, hasta): Extrae una porción del texto
-        String soloHola = saludo.substring(0, 4);
         // Extrae desde el índice 0 hasta el 3 (el 4 queda excluido)
+        String soloHola = saludo.substring(0, 4);
         System.out.println("Subcadena extraída: " + soloHola);
 
         // .contains(texto): Verifica si el texto contiene una palabra o frase (Devuelve boolean)
@@ -64,19 +63,19 @@ public class ManejoStrings {
         System.out.println("\n=== 3. COMPARACIÓN DE CADENAS ===");
         String texto1 = "Java";
         String texto2 = "Java";
-        String texto3 = new String("Java");
         // Fuerza la creación de un objeto distinto en memoria
+        String texto3 = new String("Java");
 
         // ❌ ERROR COMÚN: Comparar con '=='
         // El operador '==' compara las DIRECCIONES DE MEMORIA, no el contenido del texto.
-        System.out.println("¿texto1 == texto2?: " + (texto1 == texto2));
         // Da true por optimización interna (String Pool)
-        System.out.println("¿texto1 == texto3?: " + (texto1 == texto3));
+        System.out.println("¿texto1 == texto2?: " + (texto1 == texto2));
         // Da FALSE aunque ambos dicen "Java"
+        System.out.println("¿texto1 == texto3?: " + (texto1 == texto3));
 
         // ✔️ FORMA CORRECTA: Método .equals()
         // El método .equals() compara el CONTENIDO carácter por carácter
-        System.out.println("Forma correcta: ¿texto1.equals(texto3)?: " + texto1.equals(texto3));
         // Da TRUE
+        System.out.println("Forma correcta: ¿texto1.equals(texto3)?: " + texto1.equals(texto3));
     }
 }
