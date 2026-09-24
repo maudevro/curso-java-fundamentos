@@ -1,7 +1,6 @@
 package com.github.maudevro.cursojava.modulo01_fundamentos.utilidades;
 
 // Importaciones requeridas para las APIs de tiempo (Modernas y Legadas)
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.ZoneId;
@@ -16,6 +15,7 @@ import java.util.Calendar;
  */
 
 public class ManejoFechas {
+
     public static void main(String[] args) {
 
         // =======================================================================================
@@ -109,7 +109,7 @@ public class ManejoFechas {
         // Flujo técnico para procesar objetos clásicos en aplicaciones modernas:
         // Date -> Instant (Línea de tiempo pura) -> ZoneId (Región) -> LocalDate
         LocalDate conversionDesdeLegacy = fechaLegacy.toInstant()
-                .atZone(java.time.ZoneId.systemDefault())
+                .atZone(ZoneId.systemDefault())
                 .toLocalDate();
 
         System.out.println("\n=== 4. INTEROPERABILIDAD DE APIS ===");
