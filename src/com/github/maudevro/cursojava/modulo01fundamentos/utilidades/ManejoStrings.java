@@ -1,4 +1,4 @@
-package com.github.maudevro.cursojava.modulo01_fundamentos.utilidades;
+package com.github.maudevro.cursojava.modulo01fundamentos.utilidades;
 
 /**
  * Guía Académica: La Clase String en Java.

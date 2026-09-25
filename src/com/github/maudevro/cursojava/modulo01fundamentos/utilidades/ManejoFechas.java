@@ -1,4 +1,4 @@
-package com.github.maudevro.cursojava.modulo01_fundamentos.utilidades;
+package com.github.maudevro.cursojava.modulo01fundamentos.utilidades;
 
 // Importaciones requeridas para las APIs de tiempo (Modernas y Legadas)
 import java.time.LocalDate;

@@ -1,4 +1,4 @@
-package com.github.maudevro.cursojava.modulo01_fundamentos.operadores;
+package com.github.maudevro.cursojava.modulo01fundamentos.operadores;
 
 /**
  * Guía Técnica: Operadores Lógicos, Relacionales y Ternario en Java.

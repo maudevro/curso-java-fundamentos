@@ -1,4 +1,4 @@
-package com.github.maudevro.cursojava.modulo01_fundamentos.variables;
+package com.github.maudevro.cursojava.modulo01fundamentos.variables;
 
 /**
  *  Guía Académica de Fundamentos de Variables en Java.
